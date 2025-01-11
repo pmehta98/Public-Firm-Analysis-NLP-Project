@@ -1,30 +1,75 @@
-# Public Firm Analysis: Industry Sector Report and NLP Analysis
+# 📊 Public Firm Industry Analysis
 
-This repository contains all the deliverables and resources for the BAIT 508 group project focused on conducting an in-depth analysis of public U.S. firms within the selected "Health Services" industry sector. The analysis combines quantitative financial data analysis (1994–2020), text-based natural language processing (NLP) insights from 10-K reports, and strategic recommendations based on competitor and historical analysis.
+This repository contains an in-depth analysis of public U.S. firms within the **Health Services** industry sector. The project leverages **quantitative analysis**, **text-based natural language processing (NLP)**, and **word embeddings** to generate strategic insights into the industry and a specific firm, **Tenet Healthcare Corporation**.
 
-The objectives of this project are to provide a detailed analysis of the health services industry, utilize quantitative methods to identify trends and key financial behaviors, apply NLP techniques to extract insights from textual data, and offer actionable strategic suggestions for one sample firm (Tenet Healthcare Corporation).
+---
 
-### Files in the Repository
-- **Project Ask Document** (`BAIT508 Group Project - Public Firm Analysis.docx`): Contains the project overview, goals, and detailed instructions.
-- **Final Report** (`BAIT508_BA1_Group_9_Industry_Analysis_Report.pdf`): Includes the findings, visualizations, and strategic recommendations.
-- **Jupyter Notebook** (`BAIT508_BA1_Group_9_Industry_Analysis_Report_Code.ipynb`): Contains the Python code used for data cleaning, analysis, and visualization.
+## 📋 Project Overview
 
-The analysis utilized the following datasets:
-1. **major_groups.csv**: SIC codes and industry descriptions.
-2. **public_firms.csv**: Financial data of public firms (1994–2020).
-3. **2020_10K_item1_full.csv**: Item 1 content from 10-K reports for 2020.
+### **Objective**
+- Conduct a comprehensive analysis of public firms in the **Health Services** industry.
+- Generate actionable insights using financial and textual data for industry-wide and firm-specific strategy development.
 
-The methodology includes quantitative analysis to identify key industry trends, preliminary analysis of stock prices, sales, and geographical distributions, text analysis using word counts and TF-IDF scores, and Word2Vec modeling to identify industry-specific terms. The project also features a comprehensive analysis of Tenet Healthcare Corporation, comparing it with competitors and providing strategic suggestions based on key findings.
+### **Scope**
+1. **Quantitative Analysis**:
+   - Identify trends in financial performance across the sector.
+   - Examine the impact of major economic events (e.g., the 2008 financial crisis) on firms.
+2. **Text Analysis**:
+   - Perform keyword extraction and visualize key themes in 10-K reports using TF-IDF and word embedding techniques.
+3. **Comprehensive Firm Analysis**:
+   - Compare the financial and textual performance of **Tenet Healthcare Corporation** with its competitors.
+   - Provide actionable strategic recommendations.
 
-Key findings include insights into industry trends, operational inefficiencies in Tenet Healthcare Corporation, and recommendations for improvements in cost optimization, digital transformation, and compliance.
+---
 
-Technologies and tools used include Python and libraries such as `pandas`, `numpy`, `matplotlib`, `seaborn`, `nltk`, `gensim`, `sklearn`, and `wordcloud`.
+## 🔍 Key Insights & Recommendations
 
-To run the project:
-1. Clone this repository using `git clone https://github.com/your-username/Public-Firm-Analysis-NLP-Project.git`.
-2. Install dependencies using `pip install -r requirements.txt`.
-3. Run the Jupyter notebook to explore and replicate the analyses.
+### **Industry-Wide Insights**
+- **Top Firms by Sales**:
+  - Firms like **HCA Healthcare Inc.**, **Tenet Healthcare Corp.**, and **Fresenius Medical Care AG** dominate sales in the health services sector.
+- **Impact of 2008 Financial Crisis**:
+  - The most affected firm in the sector was **Insight Health Services Holding**, with a **99.33% stock price drop**.
+- **Trends**:
+  - Average stock prices and ROA show a steady post-2008 recovery, indicating sector resilience.
 
-This project was completed as part of the **BAIT 508** course at UBC. Team members include Zhi (Krystal) Li, Yousef Jafarnia, and Pranav Mehta.
+### **Tenet Healthcare Corporation Analysis**
+- **Strengths**:
+  - High sales volume, reaching **$17 billion** in 2015.
+- **Weaknesses**:
+  - Stagnant stock price and ROA reflect operational inefficiencies.
+- **Recommendations**:
+  1. **Cost Optimization**:
+     - Implement operational improvements and leverage digital solutions.
+  2. **Investor Confidence**:
+     - Enhance compliance and risk management to reduce legal setbacks.
+  3. **Market Position**:
+     - Focus on operational efficiency to convert sales into profits.
 
-This project is licensed under the MIT License.
+---
+
+## 📂 Repository Contents
+
+| File Name                               | Description                                                  |
+|-----------------------------------------|--------------------------------------------------------------|
+| **`BAIT508_BA1_Group_9_Industry_Analysis_Report.pdf`** | Comprehensive project report with detailed findings.         |
+| **`BAIT508_BA1_Group_9_Industry_Analysis_Report_Code.ipynb`** | Jupyter Notebook with code for the analysis.                 |
+| **`public_firms.csv`**                  | Financial data for public U.S. firms (1994-2020).            |
+| **`major_groups.csv`**                  | Industry sector codes and descriptions.                      |
+| **`2020_10K_item1_full.csv`**           | Text data from the 2020 10-K filings of public U.S. firms.   |
+
+---
+
+## 📊 Methodology
+
+1. **Quantitative Analysis**:
+   - Analyzed stock prices, sales, ROA, and geographical distribution of firms using **pandas** and **matplotlib**.
+   - Examined the impact of the 2008 financial crisis and trends over time.
+2. **Text Analysis**:
+   - Cleaned textual data from 10-K reports using **NLTK**.
+   - Extracted keywords using word counts and **TF-IDF**, visualized using word clouds.
+   - Trained a **Word2Vec** model to explore word similarities.
+3. **Comprehensive Analysis**:
+   - Analyzed stock price, sales, and ROA trends for **Tenet Healthcare Corp.**.
+   - Compared Tenet’s performance with competitors and identified key challenges.
+
+---
